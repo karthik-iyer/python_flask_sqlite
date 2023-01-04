@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expenses</title>
+</head>
+<body>
+
+<h1>Expenses</h1>
+
+<table>
+    <tr>
+        <th align="left">Date Submitted</th>
+        <th align="left">Date Serviced</th>
+        <th align="left">Amount</th>
+        <th align="left">Status</th>
+    </tr>
+    {% for expenses in expenses %}
+    <tr>
+        <td>{{ expenses[0] }}</td>
+        <td>{{ expenses[1] }}</td>
+        <td>{{ expenses[2] }}</td>
+        <td>{{ expenses[3] }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+</table>
+
+</body>
+</html>
