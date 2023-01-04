@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expenses By Member</title>
+</head>
+<body>
+
+<h1>Expenses By Member</h1>
+
+<table>
+    <tr>
+        <th align="left">EmployeeId</th> 
+        <th align="left">Employee First Name</th> 
+        <th align="left">Employee Last Name</th> 
+        <th align="left">Employee Email Address</th> 
+       <th align="left">Date Submitted</th> 
+        <th align="left">Date Serviced</th>
+        <th align="left">Amount</th>
+        <th align="left">Status</th>
+    </tr>
+    {% for expensebymember in expensebymembers %}
+    <tr>
+        <td>{{ expensebymember[0] }}</td>
+        <td>{{ expensebymember[1] }}</td>
+        <td>{{ expensebymember[2] }}</td>
+        <td>{{ expensebymember[3] }}</td>
+        <td>{{ expensebymember[4] }}</td>
+        <td>{{ expensebymember[5] }}</td>
+        <td>{{ expensebymember[6] }}</td>
+        <td>{{ expensebymember[7] }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+</table>
+
+</body>
+</html>
